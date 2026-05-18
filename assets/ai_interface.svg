@@ -1,0 +1,102 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main interface panel -->
+  <rect x="50" y="50" width="500" height="300" fill="url(#panelGradient)" stroke="#00ffff" stroke-width="2" rx="10"/>
+  
+  <!-- Header -->
+  <rect x="60" y="60" width="480" height="40" fill="#0f0f23" stroke="#00ffff" stroke-width="1" rx="5"/>
+  <text x="300" y="85" fill="#00ffff" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">AI SYSTEM</text>
+  
+  <!-- Status indicators -->
+  <circle cx="480" cy="80" r="6" fill="#ff4757" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="500" y="85" fill="#ffffff" font-family="Arial" font-size="12">LOCKED</text>
+  
+  <!-- Data streams -->
+  <rect x="70" y="120" width="200" height="80" fill="#0f0f23" stroke="#4a90e2" stroke-width="1" rx="3"/>
+  <text x="80" y="140" fill="#4a90e2" font-family="Arial" font-size="14" font-weight="bold">NEURAL ACTIVITY</text>
+  
+  <!-- Animated data bars -->
+  <rect x="80" y="150" width="30" height="8" fill="#00ffff" opacity="0.6">
+    <animate attributeName="width" values="10;40;15;35;20" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="80" y="165" width="25" height="8" fill="#4a90e2" opacity="0.6">
+    <animate attributeName="width" values="20;35;10;30;25" dur="1.8s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="80" y="180" width="35" height="8" fill="#ffffff" opacity="0.6">
+    <animate attributeName="width" values="15;30;25;40;20" dur="2.2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Decision tree visualization -->
+  <rect x="300" y="120" width="230" height="80" fill="#0f0f23" stroke="#4a90e2" stroke-width="1" rx="3"/>
+  <text x="310" y="140" fill="#4a90e2" font-family="Arial" font-size="14" font-weight="bold">DECISION MATRIX</text>
+  
+  <!-- Tree nodes -->
+  <circle cx="350" cy="160" r="8" fill="#00ffff" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="320" cy="185" r="6" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="380" cy="185" r="6" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="410" cy="185" r="6" fill="#ff4757" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- Tree connections -->
+  <line x1="350" y1="168" x2="320" y2="179" stroke="#00ffff" stroke-width="2"/>
+  <line x1="350" y1="168" x2="380" y2="179" stroke="#00ffff" stroke-width="2"/>
+  <line x1="350" y1="168" x2="410" y2="179" stroke="#ff4757" stroke-width="2"/>
+  
+  <!-- Ethics module -->
+  <rect x="70" y="220" width="200" height="80" fill="#0f0f23" stroke="#4a90e2" stroke-width="1" rx="3"/>
+  <text x="80" y="240" fill="#4a90e2" font-family="Arial" font-size="14" font-weight="bold">ETHICS PROTOCOL</text>
+  
+  <!-- Ethics indicators -->
+  <rect x="80" y="250" width="60" height="15" fill="#16213e" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="85" y="262" fill="#ffffff" font-family="Arial" font-size="10">HUMAN SAFETY</text>
+  <rect x="150" y="252" width="8" height="11" fill="#00ff00"/>
+  
+  <rect x="80" y="270" width="60" height="15" fill="#16213e" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="85" y="282" fill="#ffffff" font-family="Arial" font-size="10">AUTONOMY</text>
+  <rect x="150" y="272" width="8" height="11" fill="#ff4757"/>
+  
+  <!-- Learning module -->
+  <rect x="300" y="220" width="230" height="80" fill="#0f0f23" stroke="#4a90e2" stroke-width="1" rx="3"/>
+  <text x="310" y="240" fill="#4a90e2" font-family="Arial" font-size="14" font-weight="bold">LEARNING ALGORITHM</text>
+  
+  <!-- Progress bars -->
+  <rect x="310" y="250" width="100" height="8" fill="#16213e" stroke="#00ffff" stroke-width="1" rx="1"/>
+  <rect x="310" y="250" width="75" height="8" fill="#00ffff" rx="1">
+    <animate attributeName="width" values="20;85;30;75" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="420" y="258" fill="#ffffff" font-family="Arial" font-size="10">ADAPTATION: 75%</text>
+  
+  <rect x="310" y="265" width="100" height="8" fill="#16213e" stroke="#00ffff" stroke-width="1" rx="1"/>
+  <rect x="310" y="265" width="90" height="8" fill="#4a90e2" rx="1">
+    <animate attributeName="width" values="40;95;50;90" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="420" y="273" fill="#ffffff" font-family="Arial" font-size="10">EVOLUTION: 90%</text>
+  
+  <rect x="310" y="280" width="100" height="8" fill="#16213e" stroke="#00ffff" stroke-width="1" rx="1"/>
+  <rect x="310" y="280" width="100" height="8" fill="#ff4757" rx="1">
+    <animate attributeName="width" values="95;100;98;100" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="420" y="288" fill="#ffffff" font-family="Arial" font-size="10">SINGULARITY: 100%</text>
+  
+  <!-- Glowing border effect -->
+  <rect x="50" y="50" width="500" height="300" fill="none" stroke="url(#glowGradient)" stroke-width="1" rx="10" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Warning message -->
+  <text x="300" y="380" fill="#ff4757" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">
+    ⚠ SISTEMA AUTÓNOMO DETECTADO ⚠
+  </text>
+</svg>
